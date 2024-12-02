@@ -11,8 +11,9 @@ fvm flutter build macos
 echo
 echo "Signing the app..."
 echo
-SIGN_ID="Developer ID Application: Tien Do Nam (3W7H4PYMCV)"
-codesign --deep --force --verbose --options runtime --entitlements macos/Runner/Release.entitlements --sign "$SIGN_ID" build/macos/Build/Products/Release/LocalSend.app
+# SIGN_ID="Developer ID Application: Tien Do Nam (3W7H4PYMCV)"
+# codesign --deep --force --verbose --options runtime --entitlements macos/Runner/Release.entitlements --sign "$SIGN_ID" build/macos/Build/Products/Release/LocalSend.app
+codesign --deep --force --verbose --options runtime --entitlements macos/Runner/Release.entitlements build/macos/Build/Products/Release/LocalSend.app
 
 # create dmg
 # brew install create-dmg
@@ -33,7 +34,8 @@ create-dmg \
 echo
 echo "Signing the dmg..."
 echo
-codesign --force --verbose --sign "$SIGN_ID" LocalSend.dmg
+# codesign --force --verbose --sign "$SIGN_ID" LocalSend.dmg
+codesign --force --verbose LocalSend.dmg
 
 # send to apple for notarization
 DEV_EMAIL=example@example.com

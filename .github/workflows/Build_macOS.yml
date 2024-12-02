@@ -1,0 +1,45 @@
+name: Build macOS
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  Build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: master # stable or: beta, master (or main)
+          cache: true
+
+      - name: Install Rust
+        run: |
+          sudo softwareupdate --install-rosetta --agree-to-license
+          curl -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable --no-modify-path -y
+          rustup install stable
+          rustup install 1.83.0-aarch64-apple-darwin
+          rustup default 1.83.0 # stable
+          rustup target add aarch64-apple-darwin
+          rustup target add x86_64-apple-darwin
+          gem install cocoapods
+
+      - name: Flutter Build
+        run: |
+          cd app
+          flutter pub get
+          flutter build macos
+
+      - name: Upload Mac .dmg Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LocalSend.app
+          path: app/build/macos/Build/Products/Release/LocalSend.app
