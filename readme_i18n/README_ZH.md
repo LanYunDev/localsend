@@ -7,7 +7,9 @@
 
 [主页][homepage] • [Discord][discord] • [GitHub][github] • [Codeberg][codeberg]
 
-[English](readme_i18n/README_EN.md)
+[英语版English](readme_i18n/README_EN.md)
+以下语言链接均错误(避免合并冲突就不改了)，自行前往readme_i18n
+[English](/README.md) • [中文](README_ZH.md) • [日本語](README_JA.md) • [ภาษาไทย](README_TH.md) • [Filipino](README_PH.md) • [Polski](README_PL.md) • [Español](README_ES.md) • [Tiếng Việt](README_VI.md) • [Português Brasil](README_PT_BR.md) • [Italiano](README_IT.md) • [Indonesia](README_ID.md) • [ភាសាខ្មែរ](README_KM.md) • [Français](README_FR.md) • [فارسی](README_FA.md) • [Turkish](README_TR.md) • [한국어](README_KO.md)
 
 > 注意：中文文档更新可能不够及时，请以英文文档为准。
 

@@ -857,6 +857,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.0"
+  local_hero:
+    dependency: "direct main"
+    description:
+      name: local_hero
+      sha256: "5c85451dd51ecd0e8d3656775fac9a6db82f296f200d9931217186d34fed6089"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.0"
   logging:
     dependency: "direct main"
     description:
@@ -937,6 +945,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.4.4"
+  moform:
+    dependency: "direct main"
+    description:
+      name: moform
+      sha256: "4ef955b2422b0c7c676128b398e417b191647b6a1259d3928000a9a40c63f571"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.5"
   nanoid2:
     dependency: "direct main"
     description:
@@ -1524,26 +1540,26 @@ packages:
     dependency: "direct main"
     description:
       name: slang
-      sha256: e02feadc1291280e755ed01da39817213247295368671da67570e28ac0120aa8
+      sha256: "4cdc3d8f4b384dbc56d94c87a5371d4a584460d82a74e18247ec690a0e369ff2"
       url: "https://pub.dev"
     source: hosted
-    version: "4.3.0"
+    version: "4.4.0"
   slang_build_runner:
     dependency: "direct dev"
     description:
       name: slang_build_runner
-      sha256: "9f5497fb1562bfbcf60ff10765d72e26d24fe29747d953756f110f0929503563"
+      sha256: "2111b409ca65b0adf33db02f21cbe05eb557af920edc71038e2133657ed451c4"
       url: "https://pub.dev"
     source: hosted
-    version: "4.3.0"
+    version: "4.4.0"
   slang_flutter:
     dependency: "direct main"
     description:
       name: slang_flutter
-      sha256: "493456b7c4f842ec2e7519c2358a4653b3198b84e9b2656b03a648f7f3405471"
+      sha256: "819637a23348adbc4f4e8faee3f274d8908f9af31d57bf1e277cd730b14bacde"
       url: "https://pub.dev"
     source: hosted
-    version: "4.3.0"
+    version: "4.4.0"
   source_gen:
     dependency: transitive
     description:
