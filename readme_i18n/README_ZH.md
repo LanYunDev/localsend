@@ -1,3 +1,5 @@
+# 存档
+### 自动同步上游冲突，我用的包太新，懒的/没空解决。
 # LocalSend
 
 [![CI 状态][ci-badge]][ci-workflow]
